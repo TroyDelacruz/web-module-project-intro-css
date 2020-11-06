@@ -49,6 +49,10 @@ table {
 
 /* CSS Styling */
 
+*  {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 62.5%;
 	font-family: "Roboto Mono", monospace;
@@ -109,7 +113,7 @@ nav {
 
 /* HEADER START */
 
-.section-one {
+#header-message {
 	width: 100%;
 }
 
@@ -176,3 +180,40 @@ nav {
 }
 
 /* HEADER END */
+
+
+/* MAIN START */ 
+
+main .section-two {
+	padding: 4rem;
+	background: #DDB9A3;
+}
+
+main .section-two:nth-child(2) {
+	margin-top: 2%;
+}
+
+main .features {
+	width: 23.5%;
+    margin: auto;
+    text-align: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+main .features img {
+	max-width: 45%;
+}
+
+main .features p {
+	font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.features img:nth-child(3) {
+	margin-top: 10%;
+}
+
+/* MAIN END */
