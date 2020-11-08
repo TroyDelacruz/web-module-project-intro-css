@@ -1,166 +1,133 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/** CSS RESET START**/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+box-sizing: border-box;
 }
 
-/* CSS Styling */
-
-*  {
-	box-sizing: border-box;
-}
+/** CSS RESET END **/
 
 html {
-	font-size: 62.5%;
-	font-family: "Roboto Mono", monospace;
+    font-size:62.5%;
+    font-family: 'Roboto Mono', monospace;
 }
-
-/* NAVIGATION START */
 
 .container {
-	margin: 0 auto;
-	max-width: 145rem;
+    margin: 0 auto;
+    max-width: 1450px;
 }
 
-nav {
-	text-align: center;
-	margin-top: 4.5rem;
+/** NAVIGATION START **/
+header nav {
+    text-align: center;
+    margin-top: 45px;
 }
 
-.container nav a {
-	border-radius: 1.5rem;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-size: 2.4rem;
-	padding: 0.5% 1.5%;
-	width: 21rem;
-	height: 8rem;
-	text-decoration: none;
-	margin: 1% 6.3%;
+.container header nav a {
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:2.4rem;
+    padding: 0.5% 1.5%;
+    width: 210px;
+    height: 80px;
+    text-decoration:none;
+    margin: 1% 6.3%;
 }
 
-.container nav a:nth-child(1) {
-	background: #ff764e;
+.container header nav a:nth-child(1) {
+    background: #ff764e;
 }
 
-.container nav a:hover:nth-child(1) {
-	background: #c04c29;
+.container header nav a:hover:nth-child(1) {
+    background: #c04c29;
 }
 
-.container nav a:nth-child(2) {
-	background: #5ED3EB;
+.container header nav a:nth-child(2) {
+    background: #5ED3EB;
 }
 
-.container nav a:hover:nth-child(2) {
-	background: #1f96ad;
+.container header nav a:hover:nth-child(2) {
+    background: #1f96ad;
 }
 
-.container nav a:nth-child(3) {
-	background: #FFCD69;
+.container header nav a:nth-child(3) {
+    background: #FFCD69;
 }
 
-.container nav a:hover:nth-child(3) {
-	background: #d89a1e
+.container header nav a:hover:nth-child(3) {
+    background: #d89a1e;
+}
+/** NAVIGATION END **/
+
+
+
+/** HEADER MESSAGE START **/
+#header-title {
+    width: 100%;
 }
 
-/* NAVIGATION END */
-
-
-
-/* HEADER START */
-
-#header-message {
-	width: 100%;
-}
-
-.left {
-	float: left;
+#header-title-left {
+    float: left;
     width: 35%;
-    height: 45rem;
+    height: 450px;
     text-align: center;
 }
 
-.left img {
-	border-radius: 50%;
+#header-title-left img {
+    border-radius: 50%;
     width: 65%;
     position: relative;
     top: 90px;
     left: 30px;
 }
 
-.right {
-	float: right;
+#header-title-right {
+    float: right;
     width: 65%;
-    height: 45rem;
+    height: 450px;
 }
 
-.right p {
-	font-size: 2.2rem;
+#header-title-right p {
+    font-size: 2.2rem;
     font-weight: 600;
     position: relative;
-    top: 16.4rem;
-    left: 7.6rem;
+    top: 164px;
+    left: 76px;
     letter-spacing: 1.2px;
 }
 
-.right p:nth-of-type(2) {
-	font-size: 2.2rem;
+#header-title-right p:nth-of-type(2) {
+    font-size: 2.2rem;
     font-weight: 600;
     position: relative;
-    top: 20.4rem;
-    left: 11rem;
+    top: 204px;
+    left: 110px;
     letter-spacing: 1.2px;
     display: inline-block;
     width: 60%;
     text-align: center;
 }
 
-.right h1 {
-	font-family: "Chelsea Market";
+#header-title-right h1 {
+    font-family: "Chelsea Market";
     font-size: 7.2rem;
     position: relative;
     top: 130px;
@@ -168,52 +135,103 @@ nav {
     letter-spacing: -1px;
 }
 
-.color-animation {
-	animation: blinkblink 1.2s infinite;
-	color: #00FFEF;
+.colors{
+    animation:blinkingText 1.2s infinite;
+    color: #5ED3EB;
 }
-
-@keyframes blinkblink{
+@keyframes blinkingText{
     10%{    color: #ff764e; }
     50%{    color:#ffcd69;  }
-    80%{   color: #5ED3EB;  }
+    80%{   color: #5ED3EB;    }
+    50%{    color:#ffcd69;  }
+    10%{   color: #ff764e;    }
 }
 
-/* HEADER END */
+.clear {
+    clear: both;
+}
+/** HEADER MESSAGE END **/
 
 
-/* MAIN START */ 
 
-main .section-two {
-	padding: 4rem;
-	background: #DDB9A3;
+/** MAIN CONTENT START **/
+main #main-message {
+    width: 89%;
+    margin: 3% auto;
+    padding: 1.5%;
+    background: #DDB9A3;
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
 }
 
-main .section-two:nth-child(2) {
-	margin-top: 2%;
+main #main-message p:nth-child(2) {
+    margin-top: 2%;
 }
 
-main .features {
-	width: 23.5%;
+main #main-features {
+    width: 23.5%;
     margin: auto;
     text-align: center;
 }
 
-.bold {
-	font-weight: 700;
+main #main-features p .bold {
+    font-weight: 700;
 }
 
-main .features img {
-	max-width: 45%;
+main #main-features img {
+    max-width: 45%;
 }
 
-main .features p {
-	font-size: 1.6rem;
+main #main-features p {
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
-.features img:nth-child(3) {
-	margin-top: 10%;
+#main-features img:nth-child(3) {
+    margin-top: 10%;
+}
+/** MAIN CONTENT END **/
+
+
+
+/** FOOTER START **/
+#footer-background {
+    background-image:url("https://i.imgur.com/uQkRmLU.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    margin-top: 8%;
 }
 
-/* MAIN END */
+footer nav {
+    text-align: center;
+    padding-top: 5%;
+    background-color: #F9E7DD;
+}
+
+.container footer nav a {
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:2.4rem;
+    padding: 0.5% 1.5%;
+    width: 210px;
+    height: 80px;
+    text-decoration:none;
+    margin: -2% 6.3% 3%;
+}
+
+.container footer nav a:nth-child(1) {
+    background: #FF764E;
+}
+
+.container footer nav a:nth-child(2) {
+    background: #5ED3EB;
+}
+
+.container footer nav a:nth-child(3) {
+    background: #FFCD69;
+}
+/** FOOTER END**/
